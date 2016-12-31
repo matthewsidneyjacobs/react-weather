@@ -21,6 +21,8 @@ var About =  (props) => {
           Here is an okapi. Super rare, found in small portion of Africa.
         </div>
         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Okapi2.jpg/220px-Okapi2.jpg' alt="okapi"/>
+        {/* used url-loader didn't change my webpack config at all */}
+        <img src={require('url!app/images/okapi.jpg')}/>
         {/* why does taking an image from the web work but not local files? */}
         {/* <img source={require('image!/images/okapi.jpg')} alt="okapi"/> */}
         <div className="card-section">
